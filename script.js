@@ -8,22 +8,12 @@ let albums = {
 
 const fetchSongs = async (album) => {
     try {
-        let response = await fetch(`songs/${album}/`);
+        let response = await fetch(`https://api.github.com/repos/Bhanu201998/my-music-app/contents/songs/${album}`);
         if (!response.ok) {
             throw new Error(`HTTP error! status: ${response.status}`);
         }
-        let responseText = await response.text();
-        let div = document.createElement("div");
-        div.innerHTML = responseText;
-        let anchorTags = div.getElementsByTagName("a");
-
-        let albumSongs = [];
-        for (let index = 0; index < anchorTags.length; index++) {
-            const element = anchorTags[index];
-            if (element.href.endsWith(".mp3")) {
-                albumSongs.push(element.href);
-            }
-        }
+        let data = await response.json();
+        let albumSongs = data.filter(file => file.name.endsWith(".mp3")).map(file => file.download_url);
         albums[album] = albumSongs;
         return albumSongs;
     } catch (error) {
@@ -222,7 +212,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-  
+    // Event listener for next song button
     const nextButton = document.querySelector(".audioplaybtn[src='nextaudio.svg']");
     if (nextButton) {
         nextButton.addEventListener("click", () => {
@@ -231,7 +221,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    
+    // Event listener for close library button
     const closeLibraryButton = document.getElementById("closeLibrary");
     if (closeLibraryButton) {
         closeLibraryButton.addEventListener("click", () => {
