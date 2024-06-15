@@ -1,0 +1,22 @@
+<svg width="200" height="100" viewBox="0 0 200 100" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <style type="text/css">
+            @font-face {
+                font-family: 'Oswald';
+                src: url('https://fonts.gstatic.com/s/oswald/v48/TK3iWkUHHAIjg75cFRf3bXL8LICs1GsmG4VrKzxQp2g.ttf') format('truetype');
+            }
+            .oswald {
+                font-family: 'Oswald', sans-serif;
+                font-size: 24px;
+                fill: white;
+            }
+        </style>
+    </defs>
+    <!-- Spotify-like circle with waves -->
+    <circle cx="50" cy="50" r="40" fill="#1DB954"/>
+    <path d="M35 45c10-5 20-5 30 0" stroke="white" stroke-width="2" fill="none"/>
+    <path d="M32 55c12-6 24-6 36 0" stroke="white" stroke-width="2" fill="none"/>
+    <path d="M29 65c15-7 30-7 45 0" stroke="white" stroke-width="2" fill="none"/>
+    <!-- "Sangeet" text with Oswald font -->
+    <text x="100" y="55" class="oswald">Sangeet</text>
+</svg>

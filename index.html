@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sangeet App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="left">
+            <button id="closeLibrary">
+                <img src="cross.svg" alt="Close Library" class="cross-icon">
+            </button>
+            <div class="leftup">
+                <ul>
+                    <li><img src="logo.svg" alt=""></li>
+                    <li><img src="home .svg" alt=""></li>
+                    <li><img src="sarch.svg" alt=""></li>
+                </ul>
+            </div>
+            <div class="leftlow">
+                <div class="hadding">
+                    <img src="libarary.svg">
+                    <h1>Your Library</h1>
+                </div>
+                <div class="songlist">
+                    <ul class="ul">
+                    </ul>
+                </div>
+                <div class="footer">
+                    <ul>
+                        <li><a href="#">Legal</a></li>
+                        <li><a href="#">Safety & Privacy</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Cookies</a></li>
+                        <li><a href="#">About Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <div class="nav">
+                
+                <div class="button">
+                    <button class="singbtn">Sign up</button>
+                    <button class="logbtn">Log in</button>
+                </div>
+            </div>
+            <div class="sangeetplaylist">
+                <h1>Sangeet Playlist</h1>
+                <div class="cardcon">
+                    <div class="card" data-album="happy_hits">
+                        <img src="https://i.pinimg.com/736x/1a/3e/32/1a3e32b7143b0225946ec3673264c902.jpg">
+                       
+                        <h3 class="h">Happy Hits!</h3>
+                    </div>
+                    <div class="card" data-album="romantic_hits">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9KcD_p6AIiBzpbdaxwo4oQdkELiCU6v48gA&s">
+                       
+                        <h3 class="h">Romantic Hits!</h3>
+                    </div>
+                    <div class="card" data-album="new_hist">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_55uhnJRtWwTRoWp48Swnwsck-LpEJDvVkw&s">
+                       
+                        <h3 class="h">new Hits!</h3>
+                    </div>
+                    <div class="card" data-album="Hip-Hop Vibes">
+                        <img src="https://m.media-amazon.com/images/M/MV5BYTg0N2Q3NzMtNWQ2NC00Yjg2LTk1ZWMtMjRiMWQ3NmE1ZDc4XkEyXkFqcGdeQXVyMTMxNjUyMDkx._V1_.jpg">
+                       
+                        <h3 class="h">Hip-Hop Vibes</h3>
+                    </div>
+                    <div class="card" data-album="Country Classics">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToao_tU_ulxuUvBU17M4sFcygrJzgJ5dbdaQ&s">
+                       
+                        <h3 class="h">Country Classics</h3>
+                    </div>
+                    <div class="card" data-album="Dance Party">
+                        <img src="https://www.brides.com/thmb/VnAlJAzPcatFEfwfOvqwfCd7i7Y=/1500x0/filters:no_upscale():max_bytes(200000):strip_icc()/RECIRC4-0de601149cf7459faf7dd4347f18aec7.jpg">
+                       
+                        <h3 class="h">Dance Party</h3>
+                    </div>
+                    <div class="card" data-album="Indie Favorites">
+                        <img src="https://charts-images.scdn.co/assets/locale_en/regional/weekly/region_in_default.jpg">
+                       
+                        <h3 class="h">Indie Favorites</h3>
+                    </div>
+                    <div class="card" data-album="Electronic Beats">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-2ls7JyGB4SUOSrlpwzA0B3Q-H73cVasTsA&s">
+                       
+                        <h3 class="h">Electronic Beats</h3>
+                    </div>
+
+                </div>
+            </div>
+            <div class="audioplay">
+                <div class="control">
+                    <div class="songinfo"></div>
+                    <div class="controll button">
+                        <img class="audioplaybtn" src="preaudio.svg">
+                        <img id="play" class="audioplaybtn" src="audioplay.svg">
+                        <img class="audioplaybtn" src="netxaudio.svg">
+                    </div>
+                    <div class="volume-control">
+                        <input type="range" id="volume" min="0" max="1" step="0.01" value="1">
+                    </div>
+                    <div class="songtime"></div>
+                </div>
+            </div>
+            <div id="seekbar" class="seekbar">
+                <div id="cirule" class="cirule"></div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

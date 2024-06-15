@@ -1,0 +1,6 @@
+<svg width="150" height="50" viewBox="0 0 150 50" xmlns="http://www.w3.org/2000/svg">
+    <!-- Home icon -->
+    <path d="M10 40V20L25 10L40 20V40H30V25H20V40H10Z" fill="white"/>
+    <!-- "Home" text -->
+    <text x="42" y="35" font-family="Arial, sans-serif" font-size="20" fill="white">Home</text>
+</svg>
